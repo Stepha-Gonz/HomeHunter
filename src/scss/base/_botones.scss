@@ -1,0 +1,68 @@
+.boton-amarillo {
+  @include boton($amarillo);
+  display: block;
+
+  &:hover {
+    background-color: darken($amarillo, 10%);
+  }
+
+  &.centrar {
+    display: inline-block;
+  }
+}
+
+.boton-verde {
+  @include boton($verde);
+  color: $blanco;
+  display: inline-block;
+  margin-top: 2rem;
+  width: 20rem;
+  &:hover {
+    background-color: darken($verde, 10%);
+    cursor: pointer;
+  }
+}
+.boton-amarillo-block {
+  @include boton($amarillo);
+  color: $blanco;
+  display: inline-block;
+  margin-top: 2rem;
+  width: 20rem;
+  &:hover {
+    background-color: darken($amarillo, 10%);
+    cursor: pointer;
+  }
+}
+.boton-rojo-block {
+  @include boton($rojo);
+  display: block;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.boton-verde-block {
+  @include boton($verde);
+  display: block;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.boton-rojo {
+  @include boton($rojo);
+  display: inline-block;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 20rem;
+}
+
+.boton-azul {
+  @include boton($azul);
+  color: $blanco;
+  display: inline-block;
+  margin-top: 2rem;
+  width: 20rem;
+  &:hover {
+    background-color: darken($azul, 10%);
+    cursor: pointer;
+  }
+}

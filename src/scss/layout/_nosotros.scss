@@ -1,0 +1,21 @@
+.nosotros-contenido {
+  @include tablet {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 3rem;
+  }
+}
+.nosotros-texto {
+  h2 {
+    font-weight: $bold;
+    text-align: center;
+    @include tablet {
+      margin-top: 0;
+      text-align: left;
+    }
+  }
+  p {
+    line-height: 1.8;
+    margin-top: 0;
+  }
+}
