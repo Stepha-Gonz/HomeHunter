@@ -68,7 +68,7 @@ function validarRedireccionar(string $url){
     $id=$_GET['id'];
     $id=filter_var($id,FILTER_VALIDATE_INT);
     if(!$id){
-        header("location: ${url}");
+        header("location: {$url}");
     }
 
     return $id;
